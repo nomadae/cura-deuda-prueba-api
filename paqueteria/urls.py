@@ -26,4 +26,5 @@ urlpatterns = [
     re_path(r'^colonias/$', views.suburb_list),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
+    re_path(r'^$', views.state_list),
 ]
